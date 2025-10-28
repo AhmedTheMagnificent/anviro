@@ -1,11 +1,4 @@
-from model import MODEL
-
-def main():
-    ner = MODEL()
-    text = input("\nEnter text: ")
-    output = ner.prompt(text)
-    print("\nRaw Output:\n", output)
-
+from app import app
 
 if __name__ == "__main__":
-    main()
+    app.run(host="0.0.0.0", port=8000)
